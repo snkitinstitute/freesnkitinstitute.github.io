@@ -438,3 +438,232 @@ a {
     font-size: 38px;
   }
 }
+
+
+/* =========================
+   STEP 6.2 — PREMIUM HEADER
+========================= */
+
+/* Logo */
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand img {
+  width: 125px;
+  height: auto;
+  display: block;
+}
+
+
+/* Search Box */
+
+.search-box {
+  width: 210px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+  padding: 0 13px;
+
+  background: #f6f7f6;
+
+  border: 1px solid #e4e7e4;
+
+  border-radius: 9px;
+
+  transition: 0.3s;
+}
+
+.search-box:focus-within {
+  border-color: #75b900;
+
+  background: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(117,185,0,0.08);
+}
+
+.search-box span {
+  color: #777777;
+
+  font-size: 22px;
+
+  line-height: 1;
+}
+
+.search-box input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 13px;
+
+  color: #17202a;
+}
+
+.search-box input::placeholder {
+  color: #999999;
+}
+
+
+/* Navigation */
+
+.menu {
+  display: flex;
+
+  align-items: center;
+
+  gap: 24px;
+
+  white-space: nowrap;
+}
+
+.menu a {
+  position: relative;
+
+  color: #30353b;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #75b900;
+}
+
+
+/* Header Actions */
+
+.header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  white-space: nowrap;
+}
+
+
+/* Special Offer */
+
+.offer {
+  display: inline-flex;
+
+  align-items: center;
+
+  color: #477400;
+
+  background: #edf8df;
+
+  padding: 9px 13px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.offer:hover {
+  background: #e1f3c8;
+
+  transform: translateY(-1px);
+}
+
+
+/* Admission Button */
+
+.nav-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #ffc83d;
+
+  color: #17202a;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  background: #f5b900;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(255,200,61,0.25);
+}
+
+
+/* Header Responsive */
+
+@media (max-width: 1100px) {
+
+  .search-box {
+    width: 170px;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .offer {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 850px) {
+
+  .search-box {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header-actions {
+    margin-left: auto;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .brand img {
+    width: 105px;
+  }
+
+  .nav-button {
+    padding: 9px 13px;
+
+    font-size: 13px;
+  }
+
+}
