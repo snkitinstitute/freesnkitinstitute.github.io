@@ -1,1319 +1,764 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-  color: #17202a;
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.container {
-  width: min(1200px, 92%);
-  margin: auto;
-}
-
-/* HEADER */
-
-.header {
-  height: 72px;
-  background: #ffffff;
-  border-bottom: 1px solid #eeeeee;
-  display: flex;
-  align-items: center;
-}
+```html
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-}
+  <title>SNK IT Institute | Learn To Lead</title>
 
-.logo {
-  font-size: 22px;
-  font-weight: 800;
-  color: #17202a;
-}
+  <meta name="description"
+        content="SNK IT Institute — Practical IT training, AI-powered courses and career-focused skill development.">
 
-.logo span {
-  color: #75b900;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
 
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
+<body>
 
-.menu a {
-  font-size: 15px;
-  font-weight: 600;
-  color: #30353b;
-}
+  <!-- ================= HEADER ================= -->
+<!-- ================= HEADER ================= -->
 
-.menu a:hover {
-  color: #75b900;
-}
+<header class="header">
 
-.nav-button {
-  background: #ffc83d;
-  color: #17202a;
-  padding: 11px 20px;
-  border-radius: 8px;
-  font-weight: 700;
-}
+  <div class="container nav">
 
-/* HERO */
-/* =========================
-   STEP 7 — HERO SECTION
-========================= */
+    <!-- LOGO -->
+    <a href="#home" class="brand">
 
-.hero {
-  padding: 35px 0 55px;
+      <img
+        src="https://raw.githubusercontent.com/snkitinstitute/AssetsandProducts/main/snk-it-institute-logo.svg"
+        alt="SNK IT Institute"
+      >
 
-  background: #ffffff;
-}
+    </a>
 
-.hero-box {
-  min-height: 540px;
 
-  display: grid;
+    <!-- SEARCH -->
+    <div class="search-box">
 
-  grid-template-columns: 1.05fr 0.95fr;
+      <span>⌕</span>
 
-  align-items: center;
+      <input
+        type="text"
+        placeholder="কোর্স খুঁজুন..."
+        aria-label="কোর্স খুঁজুন"
+      >
 
-  gap: 50px;
+    </div>
 
-  padding: 55px;
 
-  border: 1px solid #dfe6df;
+    <!-- NAVIGATION -->
 
-  border-radius: 24px;
+    <nav class="menu">
 
-  overflow: hidden;
+      <a href="#home">
+        হোম
+      </a>
 
-  background:
-    radial-gradient(
-      circle at 10% 20%,
-      rgba(117,185,0,0.10),
-      transparent 35%
-    ),
-    linear-gradient(
-      135deg,
-      #f4faef,
-      #ffffff
-    );
-}
+      <a href="#courses">
+        কোর্সসমূহ
+      </a>
 
+      <a href="#about">
+        আমাদের সম্পর্কে
+      </a>
 
-/* Hero Content */
+      <a href="#contact">
+        যোগাযোগ
+      </a>
 
-.hero-content {
-  max-width: 620px;
+    </nav>
 
-  position: relative;
 
-  z-index: 2;
-}
+    <!-- HEADER ACTIONS -->
 
+    <div class="header-actions">
 
-/* Badge */
+      <a href="#courses" class="offer">
+        🎁 Special Offer
+      </a>
 
-.badge {
-  display: inline-flex;
+      <a href="#contact" class="nav-button">
+        ভর্তি করুন →
+      </a>
 
-  align-items: center;
+    </div>
 
-  gap: 7px;
+  </div>
 
-  background: #e9f7d9;
+</header>
 
-  color: #4d7800;
+    <!-- SEARCH -->
+    <div class="search-box">
 
-  border: 1px solid #d7edbe;
+      <span>⌕</span>
 
-  padding: 8px 15px;
+      <input
+        type="text"
+        placeholder="কোর্স খুঁজুন..."
+        aria-label="কোর্স খুঁজুন"
+      >
 
-  border-radius: 30px;
+    </div>
 
-  font-size: 13px;
 
-  font-weight: 800;
+    <!-- NAVIGATION -->
 
-  margin-bottom: 22px;
-}
+    <nav class="menu">
 
+      <a href="#home">
+        হোম
+      </a>
 
-/* Heading */
+      <a href="#courses">
+        কোর্সসমূহ
+      </a>
 
-.hero h1 {
-  font-size: clamp(45px, 5vw, 70px);
+      <a href="#about">
+        আমাদের সম্পর্কে
+      </a>
 
-  line-height: 1.08;
+      <a href="#contact">
+        যোগাযোগ
+      </a>
 
-  letter-spacing: -3px;
+    </nav>
 
-  color: #17202a;
 
-  margin-bottom: 22px;
-}
+    <!-- HEADER ACTIONS -->
 
-.hero h1 span {
-  color: #e55345;
-}
+    <div class="header-actions">
 
+      <a href="#courses" class="offer">
+        🎁 Special Offer
+      </a>
 
-/* Paragraph */
+      <a href="#contact" class="nav-button">
+        ভর্তি করুন →
+      </a>
 
-.hero p {
-  max-width: 570px;
+    </div>
 
-  color: #62686d;
+  </div>
 
-  font-size: 17px;
+</header>
+    <!-- NAVIGATION -->
+    <nav class="menu">
 
-  line-height: 1.8;
+      <a href="#home">হোম</a>
+      <a href="#courses">কোর্সসমূহ</a>
+      <a href="#about">আমাদের সম্পর্কে</a>
+      <a href="#contact">যোগাযোগ</a>
 
-  margin-bottom: 28px;
-}
+    </nav>
 
+    <!-- CTA -->
+    <a href="#courses" class="nav-button">
+      কোর্স দেখুন →
+    </a>
 
-/* Buttons */
+  </div>
 
-.hero-buttons {
-  display: flex;
+</header>
 
-  align-items: center;
+      <!-- LOGO -->
+      <a href="#home" class="logo">
+        SNK <span>IT</span> Institute
+      </a>
 
-  gap: 12px;
+      <!-- NAVIGATION -->
+      <nav class="menu">
 
-  flex-wrap: wrap;
-}
+        <a href="#home">হোম</a>
 
-.hero-button {
-  display: inline-flex;
+        <a href="#courses">কোর্সসমূহ</a>
 
-  align-items: center;
+        <a href="#about">আমাদের সম্পর্কে</a>
 
-  justify-content: center;
+        <a href="#contact">যোগাযোগ</a>
 
-  background: #ffc83d;
+      </nav>
 
-  color: #17202a;
+      <!-- CTA -->
+      <a href="#courses" class="nav-button">
+        কোর্স দেখুন →
+      </a>
 
-  padding: 14px 24px;
+    </div>
 
-  border-radius: 9px;
+  </header>
 
-  font-weight: 800;
 
-  transition: 0.3s;
-}
+  <!-- ================= HERO ================= -->
 
-.hero-button:hover {
-  transform: translateY(-3px);
+  <main id="home">
 
-  box-shadow:
-    0 10px 25px rgba(255,200,61,0.25);
-}
+    <section class="hero">
 
+      <div class="container">
 
-.hero-secondary-button {
-  display: inline-flex;
+        <div class="hero-box">
 
-  align-items: center;
+          <!-- LEFT -->
 
-  justify-content: center;
+          <div class="hero-content">
 
-  padding: 13px 23px;
+            <div class="badge">
+              🚀 AI-Powered • Practical • Career Focused
+            </div>
 
-  border: 1px solid #d6dcd7;
+            <h1>
+              দক্ষতা শিখুন,<br>
+              <span>ক্যারিয়ার গড়ুন।</span>
+            </h1>
 
-  background: #ffffff;
+            <p>
+              কম্পিউটার বেসিক থেকে AI-Powered UI/UX,
+              Graphic Design, Cyber Security এবং আরও অনেক
+              practical skill শিখুন অভিজ্ঞ instructor-এর
+              গাইডলাইনে।
+            </p>
 
-  color: #30353b;
+            <a href="#courses" class="hero-button">
+              শেখা শুরু করুন →
+            </a>
 
-  border-radius: 9px;
+          </div>
 
-  font-weight: 700;
 
-  transition: 0.3s;
-}
+          <!-- RIGHT -->
 
-.hero-secondary-button:hover {
-  border-color: #75b900;
+          <div class="hero-image">
 
-  color: #5c9000;
-}
+            <div class="hero-visual">
 
+              <h2>AI DRIVEN</h2>
 
-/* Hero Trust */
+              <p>
+                Skill শিখুন<br>
+                Career গড়ুন<br>
+                Future Ready হোন
+              </p>
 
-.hero-trust {
-  display: flex;
+            </div>
 
-  align-items: center;
+          </div>
 
-  gap: 30px;
+        </div>
 
-  margin-top: 35px;
+      </div>
 
-  padding-top: 25px;
+    </section>
 
-  border-top: 1px solid #dfe5df;
-}
 
-.hero-trust div {
-  display: flex;
+    <!-- ================= TRUST ================= -->
 
-  flex-direction: column;
-}
+    <section class="features">
 
-.hero-trust strong {
-  color: #75b900;
+      <div class="container">
 
-  font-size: 18px;
-}
+        <div class="feature-grid">
 
-.hero-trust span {
-  color: #777;
+          <div class="feature">
 
-  font-size: 12px;
-}
+            <strong>100%</strong>
 
+            <span>
+              Practical Learning
+            </span>
 
-/* Hero Visual */
+          </div>
 
-.hero-image {
-  height: 390px;
 
-  border-radius: 20px;
+          <div class="feature">
 
-  overflow: hidden;
+            <strong>AI</strong>
 
-  position: relative;
+            <span>
+              Powered Skills
+            </span>
 
-  background:
-    linear-gradient(
-      135deg,
-      #14251b,
-      #294b34
-    );
+          </div>
 
-  box-shadow:
-    0 25px 60px rgba(0,0,0,0.12);
-}
 
+          <div class="feature">
 
-/* Glow */
+            <strong>Expert</strong>
 
-.hero-glow {
-  position: absolute;
+            <span>
+              Instructor Support
+            </span>
 
-  width: 320px;
+          </div>
 
-  height: 320px;
 
-  border-radius: 50%;
+          <div class="feature">
 
-  background: rgba(163,255,0,0.14);
+            <strong>Career</strong>
 
-  filter: blur(35px);
+            <span>
+              Guidance
+            </span>
 
-  top: 25px;
+          </div>
 
-  right: 30px;
-}
+        </div>
 
+      </div>
 
-/* Visual */
+    </section>
 
-.hero-visual {
-  position: relative;
 
-  z-index: 2;
+    <!-- ================= ABOUT ================= -->
 
-  height: 100%;
+   <!-- ================= WHY SNK IT INSTITUTE ================= -->
 
-  padding: 25px;
+<section class="section why-section" id="about">
 
-  display: flex;
+  <div class="container">
 
-  flex-direction: column;
+    <!-- SECTION HEADER -->
 
-  justify-content: space-between;
-}
+    <div class="section-header why-header">
 
+      <small>
+        WHY SNK IT INSTITUTE
+      </small>
 
-/* Visual Top */
+      <h2>
+        শুধু কোর্স নয়,
+        <br>
+        <span>Career-এর জন্য প্রস্তুতি।</span>
+      </h2>
 
-.visual-top {
-  display: flex;
+      <p>
+        আমরা শুধু certificate দেওয়ার জন্য শেখাই না।
+        Practical skill, modern technology এবং career
+        guidance-এর মাধ্যমে শিক্ষার্থীদের বাস্তব কাজের
+        জন্য প্রস্তুত করি।
+      </p>
 
-  justify-content: space-between;
+    </div>
 
-  color: rgba(255,255,255,0.65);
 
-  font-size: 11px;
+    <!-- WHY CARDS -->
 
-  letter-spacing: 1px;
+    <div class="why-grid">
 
-  font-weight: 700;
-}
 
-.visual-top span:last-child {
-  color: #b8ff55;
-}
+      <!-- CARD 01 -->
 
+      <article class="why-card">
 
-/* Visual Main */
+        <div class="why-icon">
+          🎯
+        </div>
 
-.visual-main {
-  display: flex;
+        <div class="why-number">
+          01
+        </div>
 
-  align-items: center;
+        <h3>
+          Practical Learning
+        </h3>
 
-  gap: 25px;
-}
+        <p>
+          প্রতিটি কোর্সে hands-on practice,
+          real project এবং practical assignment-এর
+          মাধ্যমে শেখানো হয়।
+        </p>
 
-.ai-circle {
-  width: 105px;
+        <a href="#courses">
+          কোর্স দেখুন →
+        </a>
 
-  height: 105px;
+      </article>
 
-  min-width: 105px;
 
-  display: flex;
+      <!-- CARD 02 -->
 
-  align-items: center;
+      <article class="why-card featured">
 
-  justify-content: center;
+        <div class="why-icon">
+          🤖
+        </div>
 
-  border-radius: 50%;
+        <div class="why-number">
+          02
+        </div>
 
-  background:
-    linear-gradient(
-      135deg,
-      #b7ff45,
-      #6da900
-    );
+        <h3>
+          AI-Powered Training
+        </h3>
 
-  color: #14251b;
+        <p>
+          আধুনিক AI tools এবং workflow ব্যবহার করে
+          শিক্ষার্থীদের future-ready skill তৈরি করতে
+          সাহায্য করা হয়।
+        </p>
 
-  font-size: 35px;
+        <a href="#courses">
+          AI Courses দেখুন →
+        </a>
 
-  font-weight: 900;
+      </article>
 
-  box-shadow:
-    0 0 45px rgba(183,255,69,0.3);
-}
 
-.visual-main h2 {
-  color: #ffffff;
+      <!-- CARD 03 -->
 
-  font-size: 45px;
+      <article class="why-card">
 
-  line-height: 0.98;
+        <div class="why-icon">
+          💼
+        </div>
 
-  letter-spacing: -2px;
-}
+        <div class="why-number">
+          03
+        </div>
 
-.visual-main h2 span {
-  color: #b7ff45;
-}
+        <h3>
+          Career Support
+        </h3>
 
+        <p>
+          Course শেষ করার পর freelancing, portfolio,
+          job preparation এবং career direction নিয়ে
+          guidance দেওয়া হয়।
+        </p>
 
-/* Visual Bottom */
+        <a href="#contact">
+          Support নিন →
+        </a>
 
-.visual-bottom {
-  display: grid;
+      </article>
 
-  grid-template-columns: repeat(3, 1fr);
 
-  gap: 10px;
-}
+    </div>
 
-.visual-bottom div {
-  padding: 14px;
 
-  background: rgba(255,255,255,0.07);
+    <!-- BOTTOM TRUST -->
 
-  border: 1px solid rgba(255,255,255,0.09);
+    <div class="why-bottom">
 
-  border-radius: 10px;
-}
+      <div>
+        <strong>Practical</strong>
+        <span>Project Based Learning</span>
+      </div>
 
-.visual-bottom strong {
-  display: block;
+      <div>
+        <strong>Modern</strong>
+        <span>AI & Technology</span>
+      </div>
 
-  color: #b7ff45;
+      <div>
+        <strong>Support</strong>
+        <span>Career Guidance</span>
+      </div>
 
-  font-size: 12px;
-}
+      <div>
+        <strong>Certificate</strong>
+        <span>Course Completion</span>
+      </div>
 
-.visual-bottom span {
-  color: rgba(255,255,255,0.55);
+    </div>
 
-  font-size: 10px;
-}
+  </div>
 
+</section>
 
-/* Hero Responsive */
+    <!-- ================= COURSES ================= -->
 
-@media (max-width: 950px) {
+<!-- ================= COURSES SECTION ================= -->
 
-  .hero-box {
-    grid-template-columns: 1fr;
+<section class="section courses" id="courses">
 
-    padding: 40px;
+  <div class="container">
 
-  }
+    <!-- SECTION HEADER -->
 
-  .hero-content {
-    max-width: 700px;
-  }
+    <div class="section-header">
 
-  .hero-image {
-    height: 350px;
-  }
+      <small>
+        OUR COURSES
+      </small>
 
-}
+      <h2>
+        আপনার ভবিষ্যতের জন্য
+        <br>
+        সঠিক Skill বেছে নিন।
+      </h2>
 
+      <p>
+        Industry-focused practical training,
+        modern technology এবং AI-powered tools-এর
+        মাধ্যমে career-ready skill তৈরি করুন।
+      </p>
 
-@media (max-width: 650px) {
+    </div>
 
-  .hero {
-    padding: 20px 0 40px;
-  }
 
-  .hero-box {
-    padding: 28px;
+    <!-- COURSE GRID -->
 
-    border-radius: 18px;
+    <div class="course-grid">
 
-    gap: 35px;
-  }
 
-  .hero h1 {
-    font-size: 43px;
+      <!-- COURSE 01 — UI/UX -->
 
-    letter-spacing: -2px;
-  }
+      <article class="course-card">
 
-  .hero p {
-    font-size: 15px;
-  }
+        <div class="course-icon">
+          🎨
+        </div>
 
-  .hero-trust {
-    gap: 18px;
-  }
+        <div class="course-tag">
+          AI POWERED
+        </div>
 
-  .hero-image {
-    height: 300px;
-  }
+        <h3>
+          AI-Powered UI/UX Career Program
+        </h3>
 
-  .visual-main {
-    gap: 15px;
-  }
+        <p>
+          UI/UX Fundamentals, User Research,
+          User Flow, Wireframing, Prototyping,
+          Design System, Figma এবং AI-powered
+          design workflow শিখুন।
+        </p>
 
-  .ai-circle {
-    width: 75px;
+        <div class="course-info">
 
-    height: 75px;
+          <span>⏱ 3 Months</span>
 
-    min-width: 75px;
+          <span>🎯 Career Program</span>
 
-    font-size: 25px;
-  }
+        </div>
 
-  .visual-main h2 {
-    font-size: 34px;
-  }
+        <div class="price">
 
-  .visual-bottom {
-    gap: 6px;
-  }
+          <del>৳11,500</del>
 
-  .visual-bottom div {
-    padding: 10px;
-  }
+          <strong>৳7,490</strong>
 
-}
-/* HERO IMAGE */
+        </div>
 
-.hero-image {
-  height: 350px;
-  border-radius: 18px;
-  background:
-    linear-gradient(135deg, #12251b, #203d2b);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
+        <a href="#contact" class="course-button">
+          কোর্স সম্পর্কে জানুন →
+        </a>
 
-.hero-image::before {
-  content: "AI";
-  position: absolute;
-  font-size: 170px;
-  font-weight: 900;
-  color: rgba(255,255,255,0.06);
-}
+      </article>
 
-.hero-visual {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  color: #ffffff;
-}
 
-.hero-visual h2 {
-  font-size: 40px;
-  color: #ffc83d;
-  margin-bottom: 10px;
-}
+      <!-- COURSE 02 — CYBER SECURITY -->
 
-.hero-visual p {
-  color: #ffffff;
-  margin: 0;
-  font-size: 17px;
-}
+      <article class="course-card">
 
-/* FEATURES */
+        <div class="course-icon">
+          🛡️
+        </div>
 
-.features {
-  padding: 35px 0;
-}
+        <div class="course-tag">
+          LIMITED SEATS
+        </div>
 
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border: 1px solid #eeeeee;
-  border-radius: 14px;
-  overflow: hidden;
-}
+        <h3>
+          AI-Powered Cyber Security
+        </h3>
 
-.feature {
-  padding: 25px;
-  text-align: center;
-  border-right: 1px solid #eeeeee;
-}
+        <p>
+          Cyber Security fundamentals,
+          ethical hacking, security concepts
+          এবং practical cybersecurity skills
+          হাতে-কলমে শিখুন।
+        </p>
 
-.feature:last-child {
-  border-right: none;
-}
+        <div class="course-info">
 
-.feature strong {
-  display: block;
-  font-size: 25px;
-  color: #75b900;
-}
+          <span>⏱ 6 Months</span>
 
-.feature span {
-  color: #777777;
-  font-size: 14px;
-}
+          <span>🎯 Ethical Hacking</span>
 
-/* SECTION */
+        </div>
 
-.section {
-  padding: 90px 0;
-}
+        <div class="price">
 
-.section-header {
-  max-width: 700px;
-  margin-bottom: 45px;
-}
+          <del>৳12,500</del>
 
-.section-header small {
-  color: #75b900;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
+          <strong>৳9,500</strong>
 
-.section-header h2 {
-  font-size: 46px;
-  line-height: 1.15;
-  margin: 10px 0;
-}
+        </div>
 
-.section-header p {
-  color: #73777b;
-}
+        <a href="#contact" class="course-button">
+          কোর্স সম্পর্কে জানুন →
+        </a>
 
-/* COURSES */
+      </article>
 
-/* =========================
-   STEP 8.2 — COURSES
-========================= */
 
-.courses {
-  background: #f7f9f6;
-  border-top: 1px solid #edf0ed;
-  border-bottom: 1px solid #edf0ed;
-}
+      <!-- COURSE 03 — GRAPHIC DESIGN -->
 
-.course-grid {
-  display: grid;
+      <article class="course-card">
 
-  grid-template-columns: repeat(4, 1fr);
+        <div class="course-icon">
+          ✦
+        </div>
 
-  gap: 20px;
-}
+        <div class="course-tag">
+          AI POWERED
+        </div>
 
+        <h3>
+          AI-Powered Graphic Design
+        </h3>
 
-/* COURSE CARD */
+        <p>
+          Graphic Design fundamentals,
+          visual design, creative tools এবং
+          AI-powered design workflow-এর
+          মাধ্যমে professional skill তৈরি করুন।
+        </p>
 
-.course-card {
-  position: relative;
+        <div class="course-info">
 
-  display: flex;
+          <span>⏱ 4 Months</span>
 
-  flex-direction: column;
+          <span>🎯 Creative Career</span>
 
-  background: #ffffff;
+        </div>
 
-  border: 1px solid #e3e7e3;
+        <div class="price">
 
-  border-radius: 18px;
+          <del>৳7,500</del>
 
-  padding: 24px;
+          <strong>৳4,500</strong>
 
-  overflow: hidden;
+        </div>
 
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
+        <a href="#contact" class="course-button">
+          কোর্স সম্পর্কে জানুন →
+        </a>
 
-.course-card:hover {
-  transform: translateY(-7px);
+      </article>
 
-  border-color: #c8dfa9;
 
-  box-shadow:
-    0 18px 45px rgba(30, 50, 30, 0.10);
-}
+      <!-- COURSE 04 — KIDZ -->
 
+      <article class="course-card">
 
-/* COURSE ICON */
+        <div class="course-icon">
+          🗣️
+        </div>
 
-.course-icon {
-  width: 58px;
+        <div class="course-tag">
+          100 DAYS
+        </div>
 
-  height: 58px;
+        <h3>
+          100Days Kidz Spoken English
+        </h3>
 
-  display: flex;
+        <p>
+          English speaking, vocabulary,
+          pronunciation এবং communication
+          skill development-এর জন্য
+          structured learning program।
+        </p>
 
-  align-items: center;
+        <div class="course-info">
 
-  justify-content: center;
+          <span>⏱ 100 Days</span>
 
-  background:
-    linear-gradient(
-      135deg,
-      #eef8df,
-      #f7fbeF
-    );
+          <span>🎯 Kids Program</span>
 
-  border: 1px solid #deedc9;
+        </div>
 
-  border-radius: 14px;
+        <div class="price">
 
-  font-size: 27px;
+          <del>৳12,500</del>
 
-  margin-bottom: 16px;
-}
+          <strong>৳6,500</strong>
 
+        </div>
 
-/* COURSE TAG */
+        <a href="#contact" class="course-button">
+          কোর্স সম্পর্কে জানুন →
+        </a>
 
-.course-tag {
-  display: inline-flex;
+      </article>
 
-  align-self: flex-start;
 
-  padding: 5px 9px;
+    </div>
 
-  margin-bottom: 10px;
 
-  background: #f0f8e6;
+    <!-- ALL COURSES BUTTON -->
 
-  color: #5a850b;
+    <div class="courses-action">
 
-  border-radius: 5px;
+      <a href="#courses" class="all-courses-button">
+        সব কোর্স দেখুন →
+      </a>
 
-  font-size: 10px;
+    </div>
 
-  font-weight: 800;
+  </div>
 
-  letter-spacing: 0.6px;
-}
+</section>
 
 
-/* COURSE TITLE */
+    <!-- ================= CTA ================= -->
 
-.course-card h3 {
-  min-height: 52px;
+    <section class="cta" id="contact">
 
-  color: #17202a;
+      <div class="container">
 
-  font-size: 19px;
+        <h2>
+          আপনার Skill-এর
+          <br>
+          পরবর্তী ধাপ শুরু করুন।
+        </h2>
 
-  line-height: 1.35;
+        <p>
+          আজ থেকেই practical skill শেখা শুরু করুন
+          এবং নিজের future career-এর জন্য প্রস্তুতি নিন।
+        </p>
 
-  margin-bottom: 11px;
-}
+        <a href="tel:+8801705633700"
+           class="cta-button">
 
+          📞 যোগাযোগ করুন
 
-/* COURSE DESCRIPTION */
+        </a>
 
-.course-card p {
-  color: #73797d;
+      </div>
 
-  font-size: 13px;
+    </section>
 
-  line-height: 1.7;
+  </main>
 
-  min-height: 105px;
 
-  margin-bottom: 16px;
-}
+  <!-- ================= FOOTER ================= -->
 
+  <footer class="footer">
 
-/* COURSE INFO */
+    <div class="container">
 
-.course-info {
-  display: flex;
+      <strong>
+        SNK IT Institute
+      </strong>
 
-  flex-wrap: wrap;
+      <br>
 
-  gap: 7px;
+      Learn To Lead
 
-  margin-bottom: 14px;
-}
+      <br><br>
 
-.course-info span {
-  display: inline-flex;
+      © 2026 SNK IT Institute.
+      সর্বস্বত্ব সংরক্ষিত।
 
-  align-items: center;
+    </div>
 
-  padding: 5px 8px;
+  </footer>
 
-  background: #f7f8f7;
 
-  border: 1px solid #eceeec;
-
-  border-radius: 5px;
-
-  color: #747979;
-
-  font-size: 10px;
-
-  font-weight: 600;
-}
-
-
-/* PRICE */
-
-.price {
-  display: flex;
-
-  align-items: center;
-
-  gap: 8px;
-
-  padding-top: 14px;
-
-  border-top: 1px solid #eeeeee;
-
-  margin-top: auto;
-
-  margin-bottom: 16px;
-}
-
-.price del {
-  color: #999999;
-
-  font-size: 12px;
-}
-
-.price strong {
-  color: #579000;
-
-  font-size: 24px;
-
-  line-height: 1;
-}
-
-
-/* COURSE BUTTON */
-
-.course-button {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  width: 100%;
-
-  min-height: 42px;
-
-  background: #ffffff;
-
-  border: 1px solid #d9ded9;
-
-  border-radius: 8px;
-
-  color: #30353b;
-
-  font-size: 13px;
-
-  font-weight: 800;
-
-  transition: 0.3s;
-}
-
-.course-button:hover {
-  background: #ffc83d;
-
-  border-color: #ffc83d;
-
-  color: #17202a;
-}
-
-
-/* ALL COURSES */
-
-.courses-action {
-  display: flex;
-
-  justify-content: center;
-
-  margin-top: 38px;
-}
-
-.all-courses-button {
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  padding: 13px 24px;
-
-  border: 1px solid #d7ddd7;
-
-  border-radius: 8px;
-
-  background: #ffffff;
-
-  color: #30353b;
-
-  font-size: 14px;
-
-  font-weight: 800;
-
-  transition: 0.3s;
-}
-
-.all-courses-button:hover {
-  background: #17251d;
-
-  border-color: #17251d;
-
-  color: #ffffff;
-}
-
-
-/* =========================
-   COURSE RESPONSIVE
-========================= */
-
-@media (max-width: 1100px) {
-
-  .course-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-
-@media (max-width: 650px) {
-
-  .course-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .course-card {
-    padding: 22px;
-  }
-
-  .course-card h3 {
-    min-height: auto;
-  }
-
-  .course-card p {
-    min-height: auto;
-  }
-
-}
-/* CTA */
-
-.cta {
-  padding: 90px 0;
-  text-align: center;
-  background: #17251d;
-  color: #ffffff;
-}
-
-.cta h2 {
-  font-size: 48px;
-  margin-bottom: 15px;
-}
-
-.cta p {
-  color: #c8d1cb;
-  margin-bottom: 25px;
-}
-
-.cta-button {
-  display: inline-block;
-  background: #ffc83d;
-  color: #17202a;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: 800;
-}
-
-/* FOOTER */
-
-.footer {
-  padding: 30px 0;
-  border-top: 1px solid #eeeeee;
-  background: #ffffff;
-  color: #777777;
-  font-size: 14px;
-}
-
-/* MOBILE */
-
-@media (max-width: 950px) {
-
-  .course-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .feature-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .feature:nth-child(2) {
-    border-right: none;
-  }
-
-  .hero-box {
-    grid-template-columns: 1fr;
-  }
-
-}
-
-@media (max-width: 650px) {
-
-  .menu {
-    display: none;
-  }
-
-  .nav-button {
-    display: none;
-  }
-
-  .hero {
-    padding: 20px 0 50px;
-  }
-
-  .hero-box {
-    padding: 25px;
-  }
-
-  .hero h1 {
-    font-size: 42px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .hero-image {
-    height: 260px;
-  }
-
-  .feature-grid,
-  .course-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .feature {
-    border-right: none;
-    border-bottom: 1px solid #eeeeee;
-  }
-
-  .feature:last-child {
-    border-bottom: none;
-  }
-
-  .section-header h2 {
-    font-size: 36px;
-  }
-
-  .cta h2 {
-    font-size: 38px;
-  }
-}
-
-
-/* =========================
-   STEP 6.2 — PREMIUM HEADER
-========================= */
-
-/* Logo */
-
-.brand {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.brand img {
-  width: 125px;
-  height: auto;
-  display: block;
-}
-
-
-/* Search Box */
-
-.search-box {
-  width: 210px;
-  height: 42px;
-
-  display: flex;
-  align-items: center;
-
-  gap: 8px;
-  padding: 0 13px;
-
-  background: #f6f7f6;
-
-  border: 1px solid #e4e7e4;
-
-  border-radius: 9px;
-
-  transition: 0.3s;
-}
-
-.search-box:focus-within {
-  border-color: #75b900;
-
-  background: #ffffff;
-
-  box-shadow: 0 0 0 3px rgba(117,185,0,0.08);
-}
-
-.search-box span {
-  color: #777777;
-
-  font-size: 22px;
-
-  line-height: 1;
-}
-
-.search-box input {
-  width: 100%;
-
-  border: none;
-  outline: none;
-
-  background: transparent;
-
-  font-size: 13px;
-
-  color: #17202a;
-}
-
-.search-box input::placeholder {
-  color: #999999;
-}
-
-
-/* Navigation */
-
-.menu {
-  display: flex;
-
-  align-items: center;
-
-  gap: 24px;
-
-  white-space: nowrap;
-}
-
-.menu a {
-  position: relative;
-
-  color: #30353b;
-
-  font-size: 14px;
-
-  font-weight: 600;
-
-  transition: 0.3s;
-}
-
-.menu a:hover {
-  color: #75b900;
-}
-
-
-/* Header Actions */
-
-.header-actions {
-  display: flex;
-
-  align-items: center;
-
-  gap: 10px;
-
-  white-space: nowrap;
-}
-
-
-/* Special Offer */
-
-.offer {
-  display: inline-flex;
-
-  align-items: center;
-
-  color: #477400;
-
-  background: #edf8df;
-
-  padding: 9px 13px;
-
-  border-radius: 8px;
-
-  font-size: 13px;
-
-  font-weight: 700;
-
-  transition: 0.3s;
-}
-
-.offer:hover {
-  background: #e1f3c8;
-
-  transform: translateY(-1px);
-}
-
-
-/* Admission Button */
-
-.nav-button {
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  background: #ffc83d;
-
-  color: #17202a;
-
-  padding: 11px 18px;
-
-  border-radius: 8px;
-
-  font-size: 14px;
-
-  font-weight: 800;
-
-  transition: 0.3s;
-}
-
-.nav-button:hover {
-  background: #f5b900;
-
-  transform: translateY(-2px);
-
-  box-shadow: 0 8px 20px rgba(255,200,61,0.25);
-}
-
-
-/* Header Responsive */
-
-@media (max-width: 1100px) {
-
-  .search-box {
-    width: 170px;
-  }
-
-  .menu {
-    gap: 15px;
-  }
-
-  .offer {
-    display: none;
-  }
-
-}
-
-
-@media (max-width: 850px) {
-
-  .search-box {
-    display: none;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .header-actions {
-    margin-left: auto;
-  }
-
-}
-
-
-@media (max-width: 650px) {
-
-  .brand img {
-    width: 105px;
-  }
-
-  .nav-button {
-    padding: 9px 13px;
-
-    font-size: 13px;
-  }
-
-}
+</body>
+</html>
+```
